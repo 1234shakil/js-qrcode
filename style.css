@@ -1,0 +1,147 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.container #qrcode_main_box{
+  width: 370px;
+  max-height: 100vh;
+  box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+   0px 10px 20px -3px rgba(0, 0, 0, 0.4);
+   background-color: #17684c;
+   padding: 20px;
+   border-radius: 5px;
+}
+.container #qrcode_main_box h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 23px;
+  margin: 0 10px;
+}
+.container #qrcode_main_box .chosestype{ 
+  display: block;
+  margin: 12px 0;
+}
+.container #qrcode_main_box .chosestype button{
+  color: #000;
+  padding: 2px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  transition: .5s;
+}
+.container #qrcode_main_box .chosestype button:hover{
+  background-color: rgb(227, 227, 0);
+  color: #2b2b2b;
+}
+.container #qrcode_main_box input{
+  display: block;
+  margin: 0 auto;
+}
+
+.container #qrcode_main_box input#file{
+ color: #fff;
+ border: 1px solid #fff;
+ /* display: none; */
+}
+.container #qrcode_main_box input{
+  display: none;
+  margin: 7px 15px;
+  width: 300px;
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.container #qrcode_main_box label{
+  font-size: 16px;
+  font-weight: 500;
+}
+.container #qrcode_main_box select{
+  color: #17684c;
+  font-weight: 600;
+  padding: 4px 30px;
+  border: none;
+  margin:10px 0 10px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.container #qrcode_main_box select option{
+  color: #000;
+  font-weight: 600;
+}
+
+
+.container #qrcode_main_box .qrcodeContianer{
+  display: flex;
+  justify-content: center;
+  max-height: 50%;
+}
+.container #qrcode_main_box .qrcodeContianer #qrcode{
+  max-width: 300px;
+  padding: 10px;
+}
+.container #qrcode_main_box .qrcodeContianer #qrcode canvas{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.container #qrcode_main_box .qrcodeContianer #qrcode img{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* border: 1px solid red; */
+  box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 10px 20px -3px rgba(255, 255, 255, 0.1);
+}
+
+
+.container #qrcode_main_box .qr_btns{
+  display: flex; 
+  justify-content: center;
+}
+.container #qrcode_main_box .qr_btns button,
+.container #qrcode_main_box .qr_btns a{
+  color: #17684c;
+  background-color: #fff;
+  padding: 9px 30px;
+  margin:10px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: .5s;
+  text-decoration: none;
+}
+.container #qrcode_main_box .qr_btns button:hover,
+.container #qrcode_main_box .qr_btns a:hover{
+  background:none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container #qrcode_main_box .qr_btns button:active,
+.container #qrcode_main_box .qr_btns a:active{
+  transform: scale(.95);
+}
